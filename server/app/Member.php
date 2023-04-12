@@ -11,7 +11,7 @@ class Member extends Model
     'is_male','birthday','email','phone','picture','access_level',
     'created_by','modified_by','created_at','updated_at'];
     protected $hidden = [
-         'password'
+         'password','pivot'
     ];
     public function teams(){
         return $this->belongsToMany(Team::class,TeamMember::class,'member_id','team_id');
