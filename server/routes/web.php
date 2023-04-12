@@ -29,3 +29,4 @@ Route::get('test', function () {
     $elm = Candidate::find(1);
     return $elm->interviewers;
 });
+
